@@ -3,7 +3,7 @@ import React from "react";
 const SocialMediaItems = ({media}) =>{
     return(
         <>
-        <a href="media.url">{media.name}</a><br></br>
+        <a href={media.url}>{media.name}</a><br></br>
         </>
     )
 }
