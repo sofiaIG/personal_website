@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Image from './components/Image';
+import Experience from './components/Experience';
 
 function App() {
+  const social_media = [
+    {
+      name: "LinkedIn",
+      url: 'https://www.linkedin.com/in/sofia-ignatiadi-781a2116a/'
+    },
+    {
+      name:'GitHub',
+      url: 'https://github.com/sofiaIG'
+    }
+  ]
+
+  const repositories = [
+    {
+      name:'Ghibli Film',
+      url: 'https://github.com/sofiaIG/Week7-WeekendHW/tree/main/src'
+    },
+    {
+      name: 'Plant Inventory',
+      url: 'https://github.com/sofiaIG/Shop_Inventory'
+    }
+
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>Sofia Ignatiadi</h1>
+    <Image/>
+    <Experience repositories = {repositories}/>
+
+    </>
+
+    
   );
 }
 
