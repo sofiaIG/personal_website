@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 import Image from './components/Image';
 import Experience from './components/Experience';
+import FindSocialMedia from './components/FindSocialMedia';
+import './components/Experience.css'
 
 function App() {
-  const social_media = [
+  const socialMedia = [
     {
       name: "LinkedIn",
       url: 'https://www.linkedin.com/in/sofia-ignatiadi-781a2116a/'
@@ -31,7 +33,8 @@ function App() {
     <>
     <h1>Sofia Ignatiadi</h1>
     <Image/>
-    <Experience repositories = {repositories}/>
+    <Experience className = 'intro' repositories = {repositories}/>
+    <FindSocialMedia socialMedia = {socialMedia}/>
 
     </>
 
