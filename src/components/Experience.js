@@ -3,16 +3,17 @@ import ExperienceItems from "./ExperienceItems";
 
 const Experience=({repositories})=>{
 
-    const repositories_items = repositories.map((repository, index)=>{
-        
-        return 
-        <ExperienceItems repository= {repository} key ={index}/>
+    const repositoriesItems = repositories.map((repository, index)=>{ 
+        return <ExperienceItems repository= {repository} key ={index}/>
     })
         
     return(
-        <>
-        {repositories_items}
-        </>
+        <div>
+        <ul>
+          {repositoriesItems}
+        </ul>
+      </div>
+
     )
 
 }
