@@ -3,6 +3,8 @@ import './App.css';
 import Image from './components/Image';
 import Experience from './components/Experience';
 import FindSocialMedia from './components/FindSocialMedia';
+import Tabs, { TabPane } from 'rc-tabs';
+import AboutMe from './components/AboutMe';
 
 function App() {
   const socialMedia = [
@@ -37,17 +39,28 @@ function App() {
 
   ]
 
+  function callback(e){
+    console.log(e)
+  }
   return (
-    <>
-    <h1>Sofia Ignatiadi</h1>
-    <Image/>
-    <Experience repositories = {repositories}/>
-    <FindSocialMedia socialMedia = {socialMedia}/>
-
-    </>
+    <div>
+      <Image/>
+      <Tabs defaultActiveKey="2" onChange={callback}>
+        <TabPane tab = "About me" key="1">
+          <AboutMe></AboutMe>
+        </TabPane>
+        <TabPane tab="Projects" key="2">
+          <Experience repositories={repositories}/>
+        </TabPane>
+        <TabPane tab="Find me on" key="3">
+          <FindSocialMedia socialMedia = {socialMedia}/>
+        </TabPane>
+      </Tabs>
+    </div>
 
     
   );
 }
 
 export default App;
+
