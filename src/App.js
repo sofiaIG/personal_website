@@ -13,6 +13,10 @@ function App() {
     {
       name:'GitHub',
       url: 'https://github.com/sofiaIG'
+    },
+    {
+      name:"Hackerrank",
+      url: "https://www.hackerrank.com/sphignatiadi"
     }
   ]
 
@@ -24,6 +28,11 @@ function App() {
     {
       name: 'Plant Inventory',
       url: 'https://github.com/sofiaIG/Shop_Inventory'
+    }
+    ,
+    {
+      name: 'MSM Shares',
+      url : "https://github.com/sofiaIG/MSM-Shares"
     }
 
   ]
