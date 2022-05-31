@@ -5,7 +5,7 @@ import './Image.css';
 
 const Image =()=>{
     return(
-        <img className="resize" src={require('././sofia.jpg')}/>
+        <img className="img" src={require('././sofia.jpg')}/>
     )
 }
 

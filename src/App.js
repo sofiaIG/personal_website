@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Image from './components/Image';
 import Experience from './components/Experience';
 import FindSocialMedia from './components/FindSocialMedia';
 import Tabs, { TabPane } from 'rc-tabs';
 import AboutMe from './components/AboutMe';
+import { BrowserRouter, HashRouter, NavLink, Route, Routes } from 'react-router-dom';
 
 function App() {
   const socialMedia = [
@@ -17,7 +17,7 @@ function App() {
       url: 'https://github.com/sofiaIG'
     },
     {
-      name:"Hackerrank",
+      name:"HackerRank",
       url: "https://www.hackerrank.com/sphignatiadi"
     }
   ]
@@ -44,8 +44,25 @@ function App() {
   }
   return (
     <div>
-      <Image/>
-      <Tabs defaultActiveKey="2" onChange={callback}>
+
+      <BrowserRouter>
+      <header>
+        <nav>
+          <ul>
+            <li><NavLink to="about-me" children="about" /></li>
+            <li><NavLink to="projects" children="projects" /></li>
+            <li><NavLink to="social-media" children="social medias  " /></li>
+          </ul>
+        </nav>
+      </header> 
+        <Routes>
+          
+        <Route path='about-me' element={<AboutMe />} />
+        <Route path='projects' element={<Experience repositories={repositories}/>} />
+        <Route path='social-media' element={<FindSocialMedia socialMedia={socialMedia} />} />
+      </Routes>
+      </BrowserRouter>
+      {/* <Tabs defaultActiveKey="1" onChange={callback}>
         <TabPane tab = "About me" key="1">
           <AboutMe></AboutMe>
         </TabPane>
@@ -55,7 +72,7 @@ function App() {
         <TabPane tab="Find me on" key="3">
           <FindSocialMedia socialMedia = {socialMedia}/>
         </TabPane>
-      </Tabs>
+      </Tabs> */}
     </div>
 
     

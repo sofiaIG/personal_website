@@ -1,9 +1,13 @@
 .resize {
-    width: 300px;
-    height: auto;
+    
+    text-align: right;
 }
 
-.resize {
+img {
     width: 300px;
     height: auto;
-}
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
