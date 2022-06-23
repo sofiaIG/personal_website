@@ -1,70 +1,87 @@
-import React from 'react';
-import './App.css';
-import Experience from './components/Experience';
-import FindSocialMedia from './components/FindSocialMedia';
-import Tabs, { TabPane } from 'rc-tabs';
-import AboutMe from './components/AboutMe';
-import { BrowserRouter, HashRouter, NavLink, Route, Routes } from 'react-router-dom';
+// import React from 'react';
+// import './App.css';
+// import NavBar from './components/NavBar';
 
-function App() {
-  const socialMedia = [
-    {
-      name: "LinkedIn",
-      url: 'https://www.linkedin.com/in/sofia-ignatiadi-781a2116a/'
-    },
-    {
-      name:'GitHub',
-      url: 'https://github.com/sofiaIG'
-    },
-    {
-      name:"HackerRank",
-      url: "https://www.hackerrank.com/sphignatiadi"
-    }
-  ]
 
-  const repositories = [
-    {
-      name:'Ghibli Film',
-      url: 'https://github.com/sofiaIG/Week7-WeekendHW/tree/main/src'
-    },
-    {
-      name: 'Plant Inventory',
-      url: 'https://github.com/sofiaIG/Shop_Inventory'
-    }
-    ,
-    {
-      name: 'MSM Shares',
-      url : "https://github.com/sofiaIG/MSM-Shares"
-    }
+// function App() {
+//   const socialMedia = [
+//     {
+//       name: "LinkedIn",
+//       url: 'https://www.linkedin.com/in/sofia-ignatiadi-781a2116a/'
+//     },
+//     {
+//       name:'GitHub',
+//       url: 'https://github.com/sofiaIG'
+//     },
+//     {
+//       name:"HackerRank",
+//       url: "https://www.hackerrank.com/sphignatiadi"
+//     }
+//   ]
 
-  ]
+//   const repositories = [
+//     {
+//       name:'Ghibli Film',
+//       url: 'https://github.com/sofiaIG/Week7-WeekendHW/tree/main/src'
+//     },
+//     {
+//       name: 'Plant Inventory',
+//       url: 'https://github.com/sofiaIG/Shop_Inventory'
+//     }
+//     ,
+//     {
+//       name: 'MSM Shares',
+//       url : "https://github.com/sofiaIG/MSM-Shares"
+//     }
+//     ,
+//     {
+//       name:"Muse",
+//       url:"https://github.com/sofiaIG/muse-app"
+//     }
 
-  function callback(e){
-    console.log(e)
-  }
-  return (
-    <div>
 
-      <BrowserRouter>
-      <header>
-        <nav>
-          <ul>
-            <li><NavLink to="about-me" children="about" /></li>
-            <li><NavLink to="projects" children="projects" /></li>
-            <li><NavLink to="social-media" children="social medias  " /></li>
-          </ul>
-        </nav>
-      </header> 
-        <Routes>
-          
-        <Route path='about-me' element={<AboutMe />} />
-        <Route path='projects' element={<Experience repositories={repositories}/>} />
-        <Route path='social-media' element={<FindSocialMedia socialMedia={socialMedia} />} />
-      </Routes>
-      </BrowserRouter>
-    </div>
+
+//   ]
+
+//   return (
+//     <div>
+//       <NavBar repositories={repositories} socialMedia = {socialMedia}/>
 
     
+//     </div>
+
+    
+//   );
+// }
+
+// export default App;
+
+
+import React from 'react';
+import './App.css';
+import Navbar from './components/NavBar';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import Experience from "./components/Experience";
+import FindSocialMedia from "./components/FindSocialMedia";
+import AboutMe from "./components/AboutMe";
+import Home from './components/Home';
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact component={Home} />
+          <Route path='/about-me' component={AboutMe} />
+          <Route path='/social-media' component={FindSocialMedia} />
+          <Route path='/projects' component={Experience} />
+          <Route path='/social-media' component={FindSocialMedia} />
+
+        </Routes>
+      </Router>
+    </>
   );
 }
 
