@@ -1,4 +1,5 @@
 import React from "react";
+// import '../App.css'
 import ExperienceItems from "./ExperienceItems";
 
 
@@ -10,7 +11,7 @@ const Experience=({repositories})=>{
         
     return(
         <div>
-        <ul>
+        <ul className="links">
         <h2>Things that I have build</h2>
           {repositoriesItems}
         </ul>
