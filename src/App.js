@@ -62,17 +62,6 @@ function App() {
         <Route path='social-media' element={<FindSocialMedia socialMedia={socialMedia} />} />
       </Routes>
       </BrowserRouter>
-      {/* <Tabs defaultActiveKey="1" onChange={callback}>
-        <TabPane tab = "About me" key="1">
-          <AboutMe></AboutMe>
-        </TabPane>
-        <TabPane tab="Projects" key="2">
-          <Experience repositories={repositories}/>
-        </TabPane>
-        <TabPane tab="Find me on" key="3">
-          <FindSocialMedia socialMedia = {socialMedia}/>
-        </TabPane>
-      </Tabs> */}
     </div>
 
     
