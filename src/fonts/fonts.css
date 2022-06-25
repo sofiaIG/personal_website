@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: Futura;
+    src: url(./FuturaPT-ExtraBold.woff2);
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Adelle;
+    src: url(./AdelleSansEXT-Regular.woff2);
+    font-display: fallback;
+}
+
+body {
+    font-family: Adelle;
+}
+h1,h2,h3,h4 {
+    font-family: Futura;
+}
