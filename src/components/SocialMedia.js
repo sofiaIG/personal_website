@@ -6,7 +6,7 @@ import linkedin from "../images/logos/linkedin.png";
 const FindSocialMedia=()=>{
     return(
         <div id="social-media">
-        <h1>Tech Stack</h1>
+        <h1>Contact me</h1>
         <div id="social-media-logos">
           <div className="social">
             <a href="https://www.linkedin.com/in/sofia-ignatiadi-781a2116a/"><img src={linkedin} alt="linkedinLogo" />

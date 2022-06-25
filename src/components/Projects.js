@@ -8,7 +8,7 @@ const Projects = ({ repositories }) => {
 
   return (
     <div id="projects">
-      <h1>Things that I have build</h1>
+      <h1>Projects</h1>
       <ul className="links">
         {repositoriesItems}
       </ul>

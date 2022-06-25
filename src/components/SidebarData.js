@@ -6,26 +6,16 @@ import {BsStack} from 'react-icons/bs'
 
 
 export const SidebarData = [
+
   {
-    title: 'Home',
-    path: 'home',
-    icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'About Me',
+    title: 'About me',
     path: 'about-me',
     icon: <IoIcons.IoIosPerson />,
     cName: 'nav-text'
   },
+ 
   {
-    title: 'Social Media',
-    path: 'social-media',
-    icon: <IoIcons.IoIosPersonAdd />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'TechStack',
+    title: 'Tech stack',
     path: 'tech-stack',
     icon: <BsStack />,
     cName: 'nav-text'
@@ -35,7 +25,13 @@ export const SidebarData = [
     path: 'projects',
     icon: <IoIcons.IoIosRocket color='white' />,
     cName: 'nav-text'
-  }
+  },
+  {
+    title: 'Contact me',
+    path: 'social-media',
+    icon: <IoIcons.IoIosPersonAdd />,
+    cName: 'nav-text'
+  },
 
 
 ];

@@ -16,7 +16,6 @@ import trelloLogo from "../images/tech_stack/trello.jpeg";
 import vs_codeLogo from "../images/tech_stack/vs_code.png";
 import mongoDBLogo from "../images/tech_stack/mongodb.png";
 import insomniaLogo from "../images/tech_stack/insomnia.png";
-import expressLogo from "../images/tech_stack/express.png";
 import intellijLogo from "../images/tech_stack/intellij.png";
 import springLogo from "../images/tech_stack/spring.png";
 import django from "../images/tech_stack/django.png";
@@ -27,7 +26,7 @@ import aws from "../images/tech_stack/aws.png"
 const TechStack = () => {
   return (
     <div id="tech-stack">
-      <h1>Tech Stack</h1>
+      <h1>Tech stack</h1>
       <div id="tech-stack-logos">
         <div className="tech">
           <img src={pythonLogo} alt="pythonLogo" />
