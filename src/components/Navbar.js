@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { NavLink } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -15,24 +15,24 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
-          <NavLink to='#' className='menu-bars'>
+          <button className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
-          </NavLink>
+          </button>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
-              <NavLink to='#' className='menu-bars'>
+              <button className='menu-bars'>
                 <AiIcons.AiOutlineClose />
-              </NavLink>
+              </button>
             </li>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <NavLink to={item.path}>
+                  <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
-                  </NavLink>
+                  </Link>
                 </li>
               );
             })}
