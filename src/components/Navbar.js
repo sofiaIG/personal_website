@@ -15,8 +15,8 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
-          <button className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
+          <button onClick={showSidebar} className='menu-bars'>
+            <FaIcons.FaBars />
           </button>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -29,7 +29,7 @@ function Navbar() {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link smooth duration={distance => Math.abs(distance)} to={item.path}>
+                  <Link onClick={showSidebar} smooth duration={distance => Math.abs(distance)} to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>
