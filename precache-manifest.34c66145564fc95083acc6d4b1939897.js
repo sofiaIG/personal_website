@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "202f11798b303fe7f8df",
-    "url": "/personal_website/static/css/main.cdd13e21.chunk.css"
+    "revision": "b0a8b0571b35ab02037d",
+    "url": "/personal_website/static/css/main.6c867d6e.chunk.css"
   },
   {
-    "revision": "202f11798b303fe7f8df",
-    "url": "/personal_website/static/js/main.202f1179.chunk.js"
+    "revision": "b0a8b0571b35ab02037d",
+    "url": "/personal_website/static/js/main.b0a8b057.chunk.js"
   },
   {
     "revision": "e67e65479d4f06baac99",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/personal_website/static/media/pyCharm.9f6e0c20.png"
   },
   {
-    "revision": "309054a2cb692cf70876d696e1a6861f",
-    "url": "/personal_website/static/media/FuturaPT-ExtraBold.309054a2.woff2"
+    "revision": "49df383b4386db85862d4982fc47d7f0",
+    "url": "/personal_website/static/media/AdelleSansEXT-Extrabold.49df383b.woff2"
   },
   {
     "revision": "822e6b834005e7659a0953c871bde933",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/personal_website/static/media/sofia.0b8f8961.jpg"
   },
   {
-    "revision": "512d84c87fff5411a729e9caa5037c82",
+    "revision": "7aa0f1d1114301c1c928f3d596a9767b",
     "url": "/personal_website/index.html"
   }
 ];
