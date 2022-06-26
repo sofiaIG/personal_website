@@ -5,11 +5,19 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-scroll';
+import { saveAs } from "file-saver";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const saveFile = () => {
+    saveAs(
+      "C:/Users/ignat/Documents/Projects/personal_website/src/cv",
+      "CVSofiaIg.pdf"
+    );
+  };
 
   return (
     <>
@@ -18,6 +26,7 @@ function Navbar() {
           <button onClick={showSidebar} className='menu-bars'>
             <FaIcons.FaBars />
           </button>
+          <button className='download' onClick={saveFile}>Download CV</button>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

@@ -70,6 +70,13 @@
     padding: 0;
     margin: 0;
   }
+
+.download {
+  background-color: #fbfbfb;
+  border-radius: 20px;
+  height: 35px;
+  right: 400px;
+  }
   
   .navbar-toggle {
     background-color: #273539;
