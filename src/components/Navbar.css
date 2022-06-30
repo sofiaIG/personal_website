@@ -3,17 +3,17 @@
     opacity: 8;
     height: 80px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 32px);
+    padding: 0 16px;
   }
   
   .menu-bars {
-    margin-left: 2rem;
     font-size: 2rem;
     background: none;
     border: none;
@@ -41,7 +41,7 @@
   
   .nav-text {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
@@ -74,8 +74,9 @@
 .download {
   background-color: #fbfbfb;
   border-radius: 20px;
-  height: 35px;
-  right: 400px;
+  padding: 8px 14px;
+  font-family: inherit;
+  text-decoration: none;
   }
   
   .navbar-toggle {
@@ -84,8 +85,9 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0 16px;
   }
   
   span {
