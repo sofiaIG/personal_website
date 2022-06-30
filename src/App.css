@@ -112,4 +112,15 @@
   transition: .3s ease;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 12px 0;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
 
